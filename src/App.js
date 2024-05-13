@@ -1,10 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+import "./styles.css";
+
+import Search from "./Search";
+import Footer from "./Footer";
+
 function App() {
   return (
     <div className="App">
-      <h1> Hello World 👋</h1>
+      <Search />
+      <Footer />
     </div>
   );
 }
