@@ -34,6 +34,7 @@ export default function Search() {
       <input
         type="text"
         placeholder="Type a city"
+        autoFocus="on"
         className="search-input"
         onChange={updateCity}
       />
