@@ -48,7 +48,7 @@ export default function Search() {
           />
           <input type="submit" value="Search" className="search-button" />
         </form>{" "}
-        <Weather data={weather} />;
+        <Weather data={weather} />
       </div>
     );
   } else {
