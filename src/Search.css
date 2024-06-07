@@ -50,8 +50,8 @@
   font-weight: 600;
 }
 .CurrentWeather .emoji {
-  font-size: 76px;
   position: relative;
+  bottom: -25px;
 }
 .CurrentWeather .unit {
   position: relative;

@@ -3,13 +3,13 @@ import axios from "axios";
 import "./Search.css";
 
 export default function Search() {
-  let [city, setCity] = useState(null);
-  let [result, setResult] = useState(null);
-  let [weather, setWeather] = useState(null);
+  let [city, setCity] = useState();
+  let [weather, setWeather] = useState({ ready: false });
 
   function displayTemp(response) {
-    setResult(true);
     setWeather({
+      ready: true,
+      name: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -20,7 +20,7 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let key = "a969311cfcbb4a83dfad2cf7478397f9";
+    const key = "a969311cfcbb4a83dfad2cf7478397f9";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${key}`;
     axios.get(url).then(displayTemp);
   }
@@ -42,14 +42,14 @@ export default function Search() {
     </form>
   );
 
-  if (result) {
+  if (weather.ready) {
     return (
       <div>
         {" "}
         {form}
         <div className="CurrentWeather">
           <div>
-            <h1>{city}</h1>
+            <h1>{weather.name}</h1>
             <p>
               <span>*Sunday 18:34, </span>
               <span>{weather.description}</span>
@@ -59,7 +59,14 @@ export default function Search() {
             </p>
           </div>
           <div>
-            <span className="emoji">🌪️</span>
+            <span className="emoji">
+              {" "}
+              <img
+                src={weather.icon}
+                alt="current weather condition icon"
+                width="125px"
+              />{" "}
+            </span>
             <span className="current-temperature">
               {Math.round(weather.temperature)}
             </span>
