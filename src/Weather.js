@@ -23,7 +23,7 @@ export default function Weather(props) {
           <img
             src={props.data.icon}
             alt="current weather condition icon"
-            width="125px"
+            width="100px"
           />{" "}
         </span>
         <span className="current-temperature">
