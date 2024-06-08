@@ -41,6 +41,7 @@
 .CurrentWeather a,
 .CurrentWeather strong {
   color: #ffb2aa;
+  text-decoration: none;
 }
 .CurrentWeather strong {
   font-weight: 600;

@@ -3,6 +3,11 @@ footer {
   font-weight: 100;
   text-align: center;
 }
+footer a {
+  color: #ffb2aa;
+  font-weight: 700;
+  text-decoration: none;
+}
 hr {
   border-color: rgba(153, 144, 221, 40%);
   border-width: 1px;
