@@ -19,9 +19,6 @@ export default function DailyForecast(props) {
     return (
       <div className="Forecast">
         <div className="row">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
-        <div className="row">
           <WeatherForecastDay data={forecast[1]} />
         </div>
         <div className="row">
@@ -32,6 +29,9 @@ export default function DailyForecast(props) {
         </div>
         <div className="row">
           <WeatherForecastDay data={forecast[4]} />
+        </div>
+        <div className="row">
+          <WeatherForecastDay data={forecast[5]} />
         </div>
       </div>
     );
