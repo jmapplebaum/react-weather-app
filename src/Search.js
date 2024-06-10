@@ -35,7 +35,6 @@ export default function Search() {
     axios.get(url).then(displayTemp);
   }
 
-  // Initial search on component mount
   if (!weather.ready) {
     search(city);
     return "Loading...";
