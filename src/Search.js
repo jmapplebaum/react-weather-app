@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Weather from "./Weather";
-import DailyForecast from "./DailyForecast";
 import axios from "axios";
 import "./Search.css";
 
@@ -55,7 +54,6 @@ export default function Search() {
         <input type="submit" value="Search" className="search-button" />
       </form>
       <Weather data={weather} />
-      <DailyForecast city={city} />
     </div>
   );
 }
