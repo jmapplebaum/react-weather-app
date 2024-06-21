@@ -9,12 +9,12 @@
   padding: 15px;
 }
 .search-input {
-  background-color: rgba(138, 229, 176, 30%);
+  background-color: rgba(255, 193, 201, 40%);
   color: #918a84;
   width: 75%;
 }
 .search-button {
-  background-color: #9990dd;
+  background-color: #ffb07b;
   color: white;
   margin-left: 5px;
   padding: 15px 30px;
@@ -41,7 +41,7 @@
 .CurrentWeather a,
 .CurrentWeather strong,
 .forecast-temperature {
-  color: #ffb2aa;
+  color: #fc6476;
   text-decoration: none;
 }
 .CurrentWeather strong {

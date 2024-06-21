@@ -4,12 +4,12 @@ footer {
   text-align: center;
 }
 footer a {
-  color: #ffb2aa;
+  color: #fc6476;
   font-weight: 700;
   text-decoration: none;
 }
 hr {
-  border-color: rgba(153, 144, 221, 40%);
+  border-color: rgba(255, 176, 123, 60%);
   border-width: 1px;
   border-style: solid;
 }
